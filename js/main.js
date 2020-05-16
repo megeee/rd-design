@@ -31,7 +31,7 @@
             html +=    '<div class="pic-body">';
             html +=        '<img src="./case/' + catalog +'/' + (i+1) + '.jpg" alt="">';
             html +=        showText ? '<div class="description">' : '<div class="description" style="display: none">';
-            html +=            '<h3>' + data[i].title + '-' +(i+1)+ '</h3>';
+            html +=            '<h3>' + data[i].title + '</h3>';
             html +=            '<p>' + data[i].desc + '</p>';
             html +=         '</div>';
             html +=     '</div>';
