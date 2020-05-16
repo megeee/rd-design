@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/zoom.css">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script src="./js/flexible.js"></script>
+    <title>首页 --- 容点设计</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+                <h1>容点设计</h1>
+            </div>
+            <nav id="nav">
+                <a href="javascript:void(0)" data-router="case" class="active">首页</a>
+                <a href="javascript:void(0)" data-router="case">案例</a>
+                <a href="javascript:void(0)" data-router="footer">联系我们</a>
+            </nav>
+        </div>     
+    </header>
+    <section class="case" id="content"> 
+        <h2>SHOWING</h2>
+        <section class="showing">
+            <div class="case-item" data-bigimages="01.jpg,02.jpg,03.jpg" data-direct="1">
+                <h3>绘本阅读机器人</h3>
+                <img src="./images/p1.jpg" alt="">
+            </div>
+        </section>
+        <h2>OTHER</h2>
+        <section class="other">
+            <div class="case-item">
+                <h3>绘本阅读机器人</h3>
+                <img src="./images/p1.jpg" alt="">
+            </div>
+        </section>
+    </section>
+
+
+    <div class="zoom">
+        <div class="zoom-mask"></div>
+        <div class="zoom-show-wrap">
+            <div class="zoom-close">X</div>
+            <div class="zoom-navigation">1/8</div>
+            <img class="zoom-pic" src="../images/loading.gif" alt="">
+            <div class="zoom-handel zoom-prev"></div>
+            <div class="zoom-handel zoom-next"></div>
+            <div class="zoom-loading">
+                <img src="../images/loading.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <h2>容点设计（深圳）有限公司</h2>
+        <p>深圳市宝安区西乡合正汇一城东座1925室</p>
+        <p>159 947 69774 / 杨先生</p>
+        <p>商务合作 / yangqia01@126.com</p>
+        <p>人才招聘 / guojing9803@163.com</p>
+        <p>粤ICP备19013843号</p>
+        <div class="qrcode">
+            <img src="./images/qrcode.jpg" alt="">
+            <p>扫描关注公众号</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/zoom-m.js"></script>
+<script src="../js/data.js"></script>
+<script src="./js/nav.js"></script>

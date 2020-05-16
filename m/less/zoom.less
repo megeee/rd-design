@@ -1,0 +1,112 @@
+@b: 75;
+.zoom{
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 9992
+}
+.zoom .zoom-mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .9;
+    z-index: 9991
+}
+.zoom .zoom-show-wrap{
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+    z-index: 9992
+}
+.zoom .zoom-show-wrap .zoom-navigation{
+    width: 70rem/@b;
+    height: 40rem/@b;
+    line-height: 40rem/@b;
+    position: absolute;
+    top: 30rem/@b;
+    left: 50%;
+    margin-left: -25rem/@b;
+    background-color: rgba(0,0,0, .3);
+    border-radius: 15rem/@b;
+    text-align: center;
+    color: #fff;
+    font-size: 24rem/@b;
+}
+
+.zoom .zoom-show-wrap > img{
+    width: 100%;
+    display: block;
+    transition: all.3s ease-in-out;
+    
+}
+.zoom .zoom-show-wrap .zoom-pic{
+    transition: all .3s ease-in-out;
+}
+.zoom .zoom-show-wrap .zoom-close{
+    width: 60rem/@b;
+    height: 60rem/@b;
+    line-height: 60rem/@b;
+    position: absolute;
+    left: 50%;
+    bottom: -80rem/@b;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 200%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,.5);
+    text-align: center;
+    font-size: 16rem/@b;
+    cursor: pointer;
+}
+.zoom .zoom-show-wrap .zoom-close:hover{
+    transform: rotate(180deg)
+}
+.zoom .zoom-show-wrap .zoom-loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.zoom .zoom-show-wrap .zoom-handel{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: 50rem/@b;
+    background-position: left;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.zoom .zoom-show-wrap .zoom-prev{
+    left: 0;
+    background-image: url(../../images/prev_blank.png);
+}
+.zoom .zoom-show-wrap .zoom-next{
+    right: 0;
+    background-image: url(../../images/next_blank.png);
+    background-position: right;
+}
+.zoom .zoom-show-wrap .zoom-prev:active,.zoom .zoom-show-wrap .zoom-next:active{
+    background-color: rgba(0,0,0, .1)
+}

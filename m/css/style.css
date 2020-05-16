@@ -1,0 +1,131 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.37333333rem 0.53333333rem 0.37333333rem;
+  z-index: 1;
+  background: #fff;
+  transition: all .3s;
+  box-shadow: 0 0 0.33333333rem rgba(0, 0, 0, 0.1);
+}
+header.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.13333333rem 0.53333333rem 0.13333333rem;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+}
+header .header .logo > img {
+  height: 1.06666667rem;
+  margin-right: 0.13333333rem;
+}
+header .header .logo h1 {
+  font-size: 0.32rem;
+}
+header .header nav {
+  font-size: 0.37333333rem;
+}
+header .header nav a {
+  position: relative;
+  color: #000;
+  margin: 0 0.26666667rem;
+  padding: 0 0.13333333rem;
+}
+header .header nav a:last-child {
+  margin-right: 0;
+}
+header .header nav a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0.02666667rem;
+  left: 0;
+  height: 0.13333333rem;
+  border-radius: 0.05333333rem;
+  z-index: -1;
+  background: #ffec28;
+}
+.case {
+  padding: 0.53333333rem;
+  margin-top: 1.73333333rem;
+}
+.case h2 {
+  font-size: 0.42666667rem;
+  text-indent: 0.13333333rem;
+}
+.case .case-item {
+  width: 8.93333333rem;
+  height: 5.33333333rem;
+  position: relative;
+  margin-bottom: 0.26666667rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+.case .case-item h3 {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.53333333rem;
+  color: #fff;
+  line-height: 100%;
+  font-size: 0.42666667rem;
+  text-shadow: -2px 0 #333333, 0 1px #333333, 1px 0 #333333, 0 -2px #333333;
+}
+.case .case-item img {
+  width: 100%;
+}
+.footer {
+  padding: 0.4rem 0.53333333rem;
+  background: #ffec28;
+  line-height: 100%;
+  position: relative;
+}
+.footer h2 {
+  font-size: 0.42666667rem;
+  font-weight: bold;
+}
+.footer p {
+  font-size: 0.32rem;
+}
+.footer .qrcode {
+  position: absolute;
+  top: 50%;
+  right: 0.66666667rem;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 0;
+}
+.footer .qrcode img {
+  width: 1.6rem;
+}
+.footer .qrcode p {
+  font-size: 0.34666667rem;
+  line-height: 0.8rem;
+}
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 0.45333333rem;
+  }
+  .overlay ul li {
+    min-height: 0.45333333rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 0.33333333rem rgba(0, 0, 0, 0.1);
+  }
+  .void {
+    display: none;
+  }
+}
